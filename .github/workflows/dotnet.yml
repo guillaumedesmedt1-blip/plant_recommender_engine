@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Build Docker image
-      run: docker build -t plant-recommender:ci
+      run: docker build -t plant-recommender:ci .
     - name: Test
       run: dotnet test --no-build --verbosity normal
